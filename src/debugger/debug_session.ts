@@ -301,6 +301,7 @@ export class GodotDebugSession extends LoggingDebugSession {
 			});
 
 			bps = this.debug_data.get_breakpoints(path);
+			bps.sort((a, b) => (a.line < b.line ? -1 : 1));
 
 			response.body = {
 				breakpoints: bps.map((bp) => {
