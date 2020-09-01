@@ -7,3 +7,5 @@ test
 configurations/tmp.txt
 configurations/test.py
 .vscode-test
+package-lock.json
+*.patch
